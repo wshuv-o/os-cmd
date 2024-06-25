@@ -1,0 +1,260 @@
+student@Linux-VM-00:~/Desktop$ cal
+     June 2024        
+Su Mo Tu We Th Fr Sa  
+                   1  
+ 2  3  4  5  6  7  8  
+ 9 10 11 12 13 14 15  
+16 17 18 19 20 21 22  
+23 24 25 26 27 28 29  
+30                    
+student@Linux-VM-00:~/Desktop$ cal -3
+      May 2024             June 2024             July 2024        
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+          1  2  3  4                     1      1  2  3  4  5  6  
+ 5  6  7  8  9 10 11   2  3  4  5  6  7  8   7  8  9 10 11 12 13  
+12 13 14 15 16 17 18   9 10 11 12 13 14 15  14 15 16 17 18 19 20  
+19 20 21 22 23 24 25  16 17 18 19 20 21 22  21 22 23 24 25 26 27  
+26 27 28 29 30 31     23 24 25 26 27 28 29  28 29 30 31           
+                      30                                          
+student@Linux-VM-00:~/Desktop$ cal -4
+cal: invalid option -- '4'
+Usage: cal [general options] [-hjy] [[month] year]
+       cal [general options] [-hj] [-m month] [year]
+       ncal [general options] [-bhJjpwySM] [-s country_code] [[month] year]
+       ncal [general options] [-bhJeoSM] [year]
+General options: [-NC31] [-A months] [-B months]
+For debug the highlighting: [-H yyyy-mm-dd] [-d yyyy-mm]
+student@Linux-VM-00:~/Desktop$ cal 3
+                             3
+      January               February               March          
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+    1  2  3  4  5  6               1  2  3               1  2  3  
+ 7  8  9 10 11 12 13   4  5  6  7  8  9 10   4  5  6  7  8  9 10  
+14 15 16 17 18 19 20  11 12 13 14 15 16 17  11 12 13 14 15 16 17  
+21 22 23 24 25 26 27  18 19 20 21 22 23 24  18 19 20 21 22 23 24  
+28 29 30 31           25 26 27 28           25 26 27 28 29 30 31  
+                                                                  
+
+       April                  May                   June          
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+ 1  2  3  4  5  6  7         1  2  3  4  5                  1  2  
+ 8  9 10 11 12 13 14   6  7  8  9 10 11 12   3  4  5  6  7  8  9  
+15 16 17 18 19 20 21  13 14 15 16 17 18 19  10 11 12 13 14 15 16  
+22 23 24 25 26 27 28  20 21 22 23 24 25 26  17 18 19 20 21 22 23  
+29 30                 27 28 29 30 31        24 25 26 27 28 29 30  
+                                                                  
+
+        July                 August              September        
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+ 1  2  3  4  5  6  7            1  2  3  4                     1  
+ 8  9 10 11 12 13 14   5  6  7  8  9 10 11   2  3  4  5  6  7  8  
+15 16 17 18 19 20 21  12 13 14 15 16 17 18   9 10 11 12 13 14 15  
+22 23 24 25 26 27 28  19 20 21 22 23 24 25  16 17 18 19 20 21 22  
+29 30 31              26 27 28 29 30 31     23 24 25 26 27 28 29  
+                                            30                    
+
+      October               November              December        
+Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
+    1  2  3  4  5  6               1  2  3                     1  
+ 7  8  9 10 11 12 13   4  5  6  7  8  9 10   2  3  4  5  6  7  8  
+14 15 16 17 18 19 20  11 12 13 14 15 16 17   9 10 11 12 13 14 15  
+21 22 23 24 25 26 27  18 19 20 21 22 23 24  16 17 18 19 20 21 22  
+28 29 30 31           25 26 27 28 29 30     23 24 25 26 27 28 29  
+                                            30 31                 
+student@Linux-VM-00:~/Desktop$ ncal -M
+    June 2024         
+Mo     3 10 17 24   
+Tu     4 11 18 25   
+We     5 12 19 26   
+Th     6 13 20 27   
+Fr     7 14 21 28   
+Sa  1  8 15 22 29   
+Su  2  9 16 23 30   
+student@Linux-VM-00:~/Desktop$ date +%m
+06
+student@Linux-VM-00:~/Desktop$ dat +%d
+The program 'dat' is currently not installed. You can install it by typing:
+sudo apt install liballegro4-dev
+student@Linux-VM-00:~/Desktop$ date +%d
+25
+student@Linux-VM-00:~/Desktop$ date +%h
+Jun
+student@Linux-VM-00:~/Desktop$ date +%m+%h+%d
+06+Jun+25
+student@Linux-VM-00:~/Desktop$ date +%y
+24
+student@Linux-VM-00:~/Desktop$ date +%m%d%y
+062524
+student@Linux-VM-00:~/Desktop$ date +%H%M
+1417
+student@Linux-VM-00:~/Desktop$ date +%H-%M-%S-%d-%m-%y
+14-18-23-25-06-24
+student@Linux-VM-00:~/Desktop$ date
+Tue Jun 25 14:18:48 +06 2024
+student@Linux-VM-00:~/Desktop$ date +%r
+02:19:01 PM
+student@Linux-VM-00:~/Desktop$ who
+student  tty7         2024-06-11 12:56 (:0)
+student  pts/6        2024-06-25 14:11 (:11.0)
+student@Linux-VM-00:~/Desktop$ whoami
+student
+student@Linux-VM-00:~/Desktop$ logname
+student
+student@Linux-VM-00:~/Desktop$ bc
+bc 1.06.95
+Copyright 1991-1994, 1997, 1998, 2000, 2004, 2006 Free Software Foundation, Inc.
+This is free software with ABSOLUTELY NO WARRANTY.
+For details type `warranty'. 
+5+23/3
+12
+student@Linux-VM-00:~/Desktop$ man
+What manual page do you want?
+student@Linux-VM-00:~/Desktop$ man s
+No manual entry for s
+student@Linux-VM-00:~/Desktop$ man b
+No manual entry for b
+student@Linux-VM-00:~/Desktop$ man bc
+student@Linux-VM-00:~/Desktop$ cat>f1
+this is shuvo
+hello
+student@Linux-VM-00:~/Desktop$ wc
+wc f1
+      1       2       6
+student@Linux-VM-00:~/Desktop$ wc f1
+ 2  4 20 f1
+student@Linux-VM-00:~/Desktop$ wc -l f1
+2 f1
+student@Linux-VM-00:~/Desktop$ wc -w f1
+4 f1
+student@Linux-VM-00:~/Desktop$ wc -c f1
+20 f1
+student@Linux-VM-00:~/Desktop$ cat>movie
+abc
+predestination
+coherence
+yourname
+Wrongturn
+Wrongturn
+oxygen
+inthewoods
+student@Linux-VM-00:~/Desktop$ nl movie
+     1	abc
+     2	predestination
+     3	coherence
+     4	yourname
+     5	Wrongturn
+     6	Wrongturn
+     7	oxygen
+     8	inthewoods
+student@Linux-VM-00:~/Desktop$ nl -i5 movie
+     1	abc
+     6	predestination
+    11	coherence
+    16	yourname
+    21	Wrongturn
+    26	Wrongturn
+    31	oxygen
+    36	inthewoods
+student@Linux-VM-00:~/Desktop$ sort movie
+abc
+coherence
+inthewoods
+oxygen
+predestination
+Wrongturn
+Wrongturn
+yourname
+student@Linux-VM-00:~/Desktop$  sort -r movie
+yourname
+Wrongturn
+Wrongturn
+predestination
+oxygen
+inthewoods
+coherence
+abc
+student@Linux-VM-00:~/Desktop$ sort -u movie
+abc
+coherence
+inthewoods
+oxygen
+predestination
+Wrongturn
+yourname
+student@Linux-VM-00:~/Desktop$ sort movie | cat>movie2
+student@Linux-VM-00:~/Desktop$ cat movie2
+abc
+coherence
+inthewoods
+oxygen
+predestination
+Wrongturn
+Wrongturn
+yourname
+student@Linux-VM-00:~/Desktop$ sort movie| nl |cat>movie3
+student@Linux-VM-00:~/Desktop$ cat movie3
+     1	abc
+     2	coherence
+     3	inthewoods
+     4	oxygen
+     5	predestination
+     6	Wrongturn
+     7	Wrongturn
+     8	yourname
+student@Linux-VM-00:~/Desktop$ cat>animal
+cat
+dog
+deer
+rat
+hamster
+panda
+cow
+goat
+camel
+puma
+hippo
+student@Linux-VM-00:~/Desktop$ cat>bird
+humming bird
+seagul 
+eagle
+doel
+hawk
+chicken
+owl
+duck
+kingfisher
+flamingo
+student@Linux-VM-00:~/Desktop$ wc -c animal bird | cat>count
+student@Linux-VM-00:~/Desktop$ cat count
+ 57 animal
+ 73 bird
+130 total
+student@Linux-VM-00:~/Desktop$ sort -r animal bird | cat>f1| wc -c animal bird |cat>count1
+student@Linux-VM-00:~/Desktop$ cat f1
+seagul
+rat
+puma
+panda
+owl
+kingfisher
+humming bird
+hippo
+hawk
+hamster
+goat
+flamingo
+eagle
+duck
+dog
+doel
+deer
+cow
+chicken
+cat
+camel
+student@Linux-VM-00:~/Desktop$ cat count1
+ 57 animal
+ 73 bird
+130 total
+student@Linux-VM-00:~/Desktop$ ^C
+student@Linux-VM-00:~/Desktop$ 
