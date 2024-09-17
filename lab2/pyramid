@@ -1,0 +1,11 @@
+#! /bin/bash
+read a
+for ((i=0; i<$a; i++))
+do
+echo ""
+x=$(expr $a - $i)
+for (( j=$x; j>0; j--))
+do
+echo -n "*"
+done
+done

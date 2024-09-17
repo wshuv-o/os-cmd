@@ -1,0 +1,14 @@
+#! /bin/bash
+read a
+count=0
+while [ $a -gt 0 ]
+do
+rem=$(expr $a % 10)
+x=$(expr $rem % 2)
+if [ $x -eq 1 ]
+then
+count=$(expr $count + 1)
+fi
+a=$(expr $a / 10)
+done
+echo $count
